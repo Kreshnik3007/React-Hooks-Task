@@ -19,11 +19,13 @@ const CustomModal = ({open, closeModal, biggerImage}) => {
             isOpen={open}
             style={customStyles}
             onRequestClose={closeModal}
-            contentLabel="Example Modal"
+            contentLabel="Modal"
             ariaHideApp={false}
 
-        > <img className={classes.image} src={biggerImage}/>
-            <div className={classes.modalB}> <button className={classes.modalButton} onClick={closeModal}>Close</button></div>
+        > <img className={classes.image} src={biggerImage} alt={''}/>
+            <div className={classes.modalB}>
+                <button className={classes.modalButton} onClick={closeModal}>Close</button>
+            </div>
 
         </Modal>
 
